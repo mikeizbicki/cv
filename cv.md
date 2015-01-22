@@ -31,7 +31,7 @@ I was also a teaching assistant for these courses:
 | Fall   | 2012 | cs010 - introduction to computer science I
 | Fall   | 2012 | cs165 - computer security |
 
-### Publications
+### Research
 
 Conference papers:
 
@@ -53,9 +53,9 @@ Workshops / presentations / small articles:
 
 * "Machine learning? Why not monoids?" presented at Facebook, September 2013.
 
-* My personal blog ([izbicki.me](http://izbicki.me)) also contains technical writeups about many of these topics
+<!--* My personal blog ([izbicki.me](http://izbicki.me)) also contains technical writeups about many of these topics-->
 
-Online
+Online presence
 
 * [My github page](http://github.com/mikeizbicki/) contains a number of open source contributions
 

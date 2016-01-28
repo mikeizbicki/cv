@@ -11,10 +11,18 @@ The best way to contact me is via email: [mike@izbicki.me](mailto:mike@izbicki.m
 
 ### Teaching
 
+I've taught the following courses at the Pyongyang University of Science and Technology in the DPR Korea:
+
+| quarter | year | course title |
+| ----- | ----- | ----- |
+| Fall | 2015 | discrete math |
+| Fall | 2015 | algorithm design |
+
 I've taught the following courses for the computer science department at [UC Riverside](http://www.cs.ucr.edu):
 
 | quarter | year | course title |
 | ----- | ----- | ----- |
+| Spring | 2015   | [cs100 - open source software construction](http://github.com/mikeizbicki/ucr-cs100/) |
 | Winter | 2015   | [cs100 - open source software construction](http://github.com/mikeizbicki/ucr-cs100/) |
 | Fall   | 2014   | [cs100 - open source software construction](http://github.com/mikeizbicki/ucr-cs100/) |
 | Summer | 2014   | [cs100 - open source software construction](http://github.com/mikeizbicki/ucr-cs100/) |
@@ -35,25 +43,31 @@ I was also a teaching assistant for these courses:
 
 Conference papers:
 
+* [Faster Cover Trees](http://izbicki.me/public/papers/icml2015-faster-cover-trees.pdf), with Christian Shelton.  International Conference of Machine Learning (ICML) 2015.
+
 * [Algebraic classifiers: a generic approach to fast cross-validation, online training, and parallel training](https://izbicki.me/public/papers/icml2013-algebraic-classifiers.pdf).  International Conference of Machine Learning (ICML) 2013.
 
 <!--Don Needham and Michael Izbicki, "High energy laser progressive wavefront modeling," Proceedings of the International Conference on Software Engineering Research and Practice (SERP'07), Las Vegas, NV, 25-28 June 2007. pp. 137-143.-->
 
 Workshops / presentations / small articles:
 
+* Open Sourcing the Classroom.  Graduate student research competition at SigCSE 2016.
+
+* [Open Sourcing the Classroom](http://izbicki.me/public/papers/icopust2015.pdfa).  International Conference of the Pyongyang University of Science and Technology (IcoPUST) 2015.
+
+* [Bashing Haskell: Reimplementing Haskell's Parsec Library in the Unix Shell](https://github.com/mikeizbicki/parsed/raw/master/sigbovik2015/paper.pdf). SigBOVIK 2015.
+
 * "Modeling data with algebra," Workshop on Data Centric Programming (DCP) 2014.
 
-* "HLearn: a machine learning library for Haskell," Trends in Functional Programming (TFP) 2013.
+* [HLearn: a machine learning library for Haskell,](https://izbicki.me/public/papers/tfp2013-hlearn-a-machine-learning-library-for-haskell.pdf) Trends in Functional Programming (TFP) 2013.
 
-* [The open source software package HLearn](https://izbicki.me/public/papers/tfp2013-hlearn-a-machine-learning-library-for-haskell.pdf). Workshop on Machine Learning Open Source Software (MLOSS) 2013.
-
-<!--* Don Needham and Michael Izbicki, "USNA high energy laser educational initiative," High Energy Laser Joint Technology Office (HEL-JTO) Annual Review, Albuquerque, NM, 01-04 May 2007.-->
+* The open source software package HLearn. Workshop on Machine Learning Open Source Software (MLOSS) 2013.
 
 * [Two monoids for solving NP-complete problems](https://izbicki.me/public/papers/monoids-for-approximating-np-complete-problems.pdf). The Monad Reader, 2013.
 
 * "Machine learning? Why not monoids?" presented at Facebook, September 2013.
 
-<!--* My personal blog ([izbicki.me](http://izbicki.me)) also contains technical writeups about many of these topics-->
+<!--* Don Needham and Michael Izbicki, "USNA high energy laser educational initiative," High Energy Laser Joint Technology Office (HEL-JTO) Annual Review, Albuquerque, NM, 01-04 May 2007.-->
 
 Online presence
 
@@ -101,8 +115,10 @@ I received the following academic awards:
 
 I was in the navy from 2004-2011.
 Most of this time was spent in training at either the Naval Academy or NNPTC.
+<!--
 I also spent a year working at the naval submarine school,
 but I never did a "real deployment."
+-->
 I left the navy as a conscientious objector based on religious grounds.
 The NYTimes did a [rather nice writeup](http://www.nytimes.com/2011/02/23/nyregion/23objector.html?pagewanted=all&_r=0) of my discharge,
 and I have [a number of blog posts](https://izbicki.me/#my%20conscientious%20objector%20discharge) about the topic.

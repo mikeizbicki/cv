@@ -1,24 +1,24 @@
 ## Mike Izbicki's curriculum vitae
 
 I am a phd student and lecturer in the computer science department at [UC Riverside](http://www.cs.ucr.edu).
-My advisor is [Dr. Christian Shelton](http://www.cs.ucr.edu/~cshelton/), and
-my research interests include:
-machine learning,
-functional programming,
+My advisor is [Dr. Christian Shelton](http://www.cs.ucr.edu/~cshelton/).
+My main research is in speeding up machine learning algorithms,
+but I'm also interested in
+functional programming
 and computer science education.
 Most of my projects are listed in my [github page](http://github.com/mikeizbicki) or my [personal website](http://izbicki.me).
 The best way to contact me is via email: [mike@izbicki.me](mailto:mike@izbicki.me).
 
 ### Teaching
 
-I've taught the following courses at the Pyongyang University of Science and Technology in the DPR Korea:
+I taught the following courses at the [Pyongyang University of Science and Technology](https://en.wikipedia.org/wiki/Pyongyang_University_of_Science_and_Technology):
 
 | quarter | year | course title |
 | ----- | ----- | ----- |
 | Fall | 2015 | discrete math |
 | Fall | 2015 | algorithm design |
 
-I've taught the following courses for the computer science department at [UC Riverside](http://www.cs.ucr.edu):
+I taught the following courses at [UC Riverside](http://www.cs.ucr.edu):
 
 | quarter | year | course title |
 | ----- | ----- | ----- |

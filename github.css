@@ -11,7 +11,8 @@ body {
   margin: 0px auto;
 }
 
-table { min-width: 700px; }
+/*table { min-width: 700px; }*/
+table { width: 90%; }
 td:first-child { width: 75px; }
 td:nth-child(2) { width: 75px; }
 /*td:second-child { min-width: 75px; }*/

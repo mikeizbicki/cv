@@ -89,13 +89,21 @@ Non-computer science writing:
 
 ### Education
 
-| degree | school | time frame |
-| ------ | ------ | ---------- |
-| PhD (computer science)   |  [University of California Riverside](http://www.cs.ucr.edu)          | 2011-Present |
-| EOOW qualification | [Naval Nuclear Propulsion Training Command](www.netc.navy.mil/nnptc/)    | 2009 |
-| MS (computer science) | [Johns Hopkins University Applied Physics Laboratory](http://www.jhuapl.edu/) | 2008 |
-| BS (computer science) |  [United States Naval Academy](http://usna.edu)                 |  2004-2008 |
-| High school diploma | [San Clemente High School](http://www.sctritons.com/) | 2000-2004 |
+| time frame |degree | school |
+| ---------- |------ | ------ |
+| 2011-Present  | PhD    |  [University of California Riverside](http://www.cs.ucr.edu)    |
+| 2009          | EOOW | [Naval Nuclear Propulsion Training Command](www.netc.navy.mil/nnptc/) |
+| 2008          | MS  | [Johns Hopkins University Applied Physics Laboratory](http://www.jhuapl.edu/) |
+| 2004-2008 |BS  |  [United States Naval Academy](http://usna.edu)                 |
+| 2000-2004 |High school diploma | [San Clemente High School](http://www.sctritons.com/) |
+
+<!--
+| 2011-Present  | PhD (computer science)   |  [University of California Riverside](http://www.cs.ucr.edu)    |
+| 2009          | EOOW qualification | [Naval Nuclear Propulsion Training Command](www.netc.navy.mil/nnptc/) |
+| 2008          | MS (computer science) | [Johns Hopkins University Applied Physics Laboratory](http://www.jhuapl.edu/) |
+| 2004-2008 |BS (computer science) |  [United States Naval Academy](http://usna.edu)                 |
+| 2000-2004 |High school diploma | [San Clemente High School](http://www.sctritons.com/) |
+-->
 
 I received the following academic awards:
 

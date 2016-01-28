@@ -7,7 +7,15 @@ body {
   background-color: white;
   padding: 30px;
   color: #333;
+  max-width: 800px;
+  margin: 0px auto;
 }
+
+table { min-width: 700px; }
+td:first-child { width: 75px; }
+td:nth-child(2) { width: 75px; }
+/*td:second-child { min-width: 75px; }*/
+td:last-child { min-width: 300px; }
 
 body > *:first-child {
   margin-top: 0 !important;

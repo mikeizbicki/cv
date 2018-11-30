@@ -1,0 +1,13 @@
+*.pdf
+*.bbl
+*.log
+*.aux
+*.blg
+*.out
+*.fls
+*.fdb_latexmk
+
+*.swo
+*.swp
+
+applications-other

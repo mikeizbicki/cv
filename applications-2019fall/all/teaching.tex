@@ -1,0 +1,141 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{url}
+%\usepackage{hyperref}
+
+\usepackage{titlesec}
+%\titleformat{\section}[runin]
+    %{\normalfont\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}[runin]
+    {\normalfont\bfseries}{\thesubsection}{0em}{\vspace{-0.00in}}
+
+%\setlength{\parskip}{15pt plus4mm minus3mm}
+
+\newcommand{\newpar}{\vspace{0.05in}\noindent}
+\newcommand{\ignore}[1]{}
+
+\begin{document}
+
+
+\section*{Teaching Statement for Mike Izbicki}
+
+\subsection*{Executive Summary.}
+I enjoy teaching and have taught eleven courses at universities in both the United States and Korea.
+I'm proud to say that my teaching has been recognized by students, researchers, and even congressmen.
+Most of my student end-of-course evaluations ranked my ``effectiveness as a teacher overall'' in the 80th percentile or higher;
+I earned a SIGCSE graduate research award for innovative curriculum design;
+and I earned a Congressional Recognition award for my teaching in Korea.
+
+A unique aspect of my teaching is an emphasis on helping students contribute to open source software.
+For example, I developed some of the first curricula specifically designed to teach students how to start and contribute to open source projects.
+I plan to incorporate open source practices into all the courses I teach,
+and hope to create a center dedicated to teaching open source practices to students.
+
+
+\vspace{-0.15in}
+\subsection*{Teaching at UC Riverside.}
+ had many teaching opportunities while working on my PhD.
+After being a teaching assistant for a year, 
+the department asked me to teach my own courses,
+and I taught a total of 7 courses at all levels of the undergraduate curriculum.
+These courses ranged from introductory courses for humanities majors to upper division algorithms courses.
+%I taught courses for non-majors (CS006: Intro to the World Wide Web),
+%lower level major courses (CS014: Data Structures, and CS100: Software Construction),
+%and upper level major courses (CS141: Algorithm Design).
+I took student end-of-course feedback seriously and actively worked to improve my teaching.
+As a result, student evaluations of my ``effectiveness as a teacher overall'' steadily improved.
+In my first class, I was ranked in the 46th percentile; 
+then in subsequent courses I was ranked in the 62nd, 69th, 100th, 87th, 80th, and 93rd percentiles respectively.
+Outside the classroom,
+I coached UCR's International Collegiate Programming Contest (ICPC) team,
+mentored undergraduate student projects,
+and helped run a summer programming workshop for elementary and middle school students.
+
+I'm particularly proud of the software construction course that I taught.
+I redesigned the course's curriculum to focus on version control systems and open source software development methodologies,
+which were not previously taught in UCR's curriculum.
+I chose to emphasize these skills because research has shown that employers prefer to hire new graduates with this knowledge.
+%My mantra for the course was ``everything in the course should be open sourced.''
+At the time, very few courses existed to teach about open source software,
+and so I designed the curriculum from scratch.
+One of the most important teaching techniques I employed in the course was to put all the course material into a github repository,%
+\footnote{The course details are all still available on github at \url{https://github.com/mikeizbicki/ucr-cs100}}
+including the syllabus, assignments, textbook, sample programs, and grading scripts.
+If a student found a mistake,
+they could submit a pull request to fix it and get extra credit.
+Students loved this system, and submitted an average of 5 pull requests per student.
+%I enjoyed watching the students find and fix these mistakes,
+%and the students did too.
+%On average 5 pull requests were merged per student.
+I found that shy students who participated only a small amount in labs and lecture felt comfortable contributing to the course in this format.
+I believe that the best courses are created when educators work together and share their ideas,
+so I submitted this course to SIGCSE2016's graduate student research competition,
+where it won third place.
+I also published a paper on the class at a Korean engineering conference called ICOPUST.
+
+Mentoring student projects is another aspect of teaching I particularly enjoy. 
+As a mentor, my main goal is to help students create open source projects that are both fun for them to build and useful to other people.
+A common theme I've noticed is that while students are great at the technical aspects of building a project,
+they often struggle with the softer skills needed to market their projects and get them widely adopted.
+I like working closely with students to advertise their projects in appropriate social media forums like Reddit and Hacker News.
+As a result, their projects have garnered thousands of github stars and active users.
+This popularity makes the students excited and gives them a much stronger resume when looking for their first job.
+Some example projects I've mentored are: 
+the Git Game\footnote{\url{https://github.com/git-game}} teaches the player how to use git commands;
+PacVim\footnote{\url{https://github.com/jmoon018/PacVim}} is a Pacman clone that teaches the player how to use vim commands;
+and the Melody Matcher\footnote{\url{https://github.com/MiaoXiao/Melody-Matcher}} is an in-browser game designed for musical ``ear training.''
+
+\vspace{-0.15in}
+\subsection*{Teaching in Korea.}
+I spent two semesters as a visiting professor at a unique university called the Pyongyang University of Science and Technology (PUST). 
+PUST is located in North Korea, 
+and was founded in a cooperative effort between the North and South Korean departments of education, the US State Department, and several non-governmental organizations.
+Its mission is to contribute to the peaceful reunification of North and South Korea by internationalizing the North Korean educational system.
+The students who attend PUST are isolated from the global economy,
+and as a result they are extremely poor.
+PUST teaches these students the skills needed to integrate into the global economy,
+and the hope is that this will help lift these student out of poverty.
+My work at PUST earned awards from both the California Assembly and US Congress.
+%My experience teaching at PUST has made me a better educator because I am able to adapt to very different cultural situations,
+%and I can help students understand the potential broader impacts of their computer science education.
+
+A key part of my work at PUST was teaching North Koreans to use and contribute to open source software.
+%This required navigating a number of political hurdles and clearly articulating to North Korean stakeholders of the benefits of open source software to their population.
+%I taught four courses at PUST (Discrete Math, two sections of Algorithm Design, and Open Source Machine Learning Software). 
+%I taught three courses at PUST.
+%One of my main goals at PUST 
+%At PUST I taught three courses:
+%discrete math,
+%algorithm design (I was the first non-North Korean to teach this course),
+%and open source machine learning (I designed this course to meet the particular needs of PUSTs students).
+%I was the first non-North Korean to teach the Algorithm Design course at PUST.
+For example, I designed a masters-level open source machine learning course,
+which was the first course in North Korea on open source software. 
+I am particularly proud of these students' accomplishments.
+Students in this course created patches for two widely used open source machine learning projects (Vowpal Wabbit and MLPack) which have been incorporated into the projects,
+and I believe these patches are the first open source contributions created by North Koreans.
+I'm amazed that because of open source software, these students have had the opportunity to collaborate with people from very different cultures around the world.
+
+%I see my experience at PUST making me a better educator in the US.
+%I can help them understand how different countries have different computational needs,
+%and how computer science can play a role in economic development and American policy making.
+
+\vspace{-0.15in}
+\subsection*{Future Teaching Goals.}
+
+I am most interested in teaching classes on data structures, discrete math, algorithms, theory of computing, artificial intelligence, data science, machine learning, deep learning, numerical optimization and programming languages.
+I am also able to teach any course in the undergraduate computer science curriculum if needed.
+
+A longterm goal of mine is to create a center for teaching open source software development.
+A first step to achieving this goal would be to add a course on open source software development to the curriculum.
+This course would get students directly involved in contributing to widely used open source projects and teach them how to start their own open source projects.
+Once a number of students are trained in open source,
+the center could then provide longterm support to open source projects that students have created.
+%This would also be a good opportunity for interdisciplinary collaboration,
+Ultimately, the center would encourage collaboration with developers from around the world and increase the profile of the host university.
+%Students would learn how to collaborate with developers from around the world,
+%and would contribute to products.
+
+\end{document}
+

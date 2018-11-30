@@ -1,0 +1,224 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+
+\usepackage{titlesec}
+%\titleformat{\section}[runin]
+    %{\normalfont\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}[runin]
+    {\normalfont\bfseries}{\thesubsection}{1em}{}
+
+\newcommand{\newpar}{\vspace{0.05in}\noindent}
+\newcommand{\ignore}[1]{}
+
+\newcommand{\fixme}[1]{\textcolor{red}{#1}}
+
+\begin{document}
+\section*{Research Statement for Mike Izbicki}
+
+\subsection*{Executive Summary:}
+
+%Machine learning algorithms increasingly run our world.
+%People are increasingly dependent on machine learning algorithms.
+Our lives increasingly depend on machine learning algorithms.
+These algorithms determine everything from the news we see on social media to how electricity flows through the power grid.
+Unfortunately, these algorithms are opaque and highly complex.
+They are difficult for non-experts to use, and
+even experts apply these algorithms in ways that unintentionally and unfairly favor certain people groups.
+
+
+
+%My research develops theoretical methods that democratize machine learning in three ways.
+My research helps democratize machine learning in three ways.
+%My research addresses these deficits in three ways.
+First, I study how to make algorithms for analyzing big data \textbf{simpler},
+so that non-experts can use them.
+%Algorithms I've developed simplify the tools needed for analyzing big data sets,
+%making these tools more accessible to non-experts.
+Second, I study how to make algorithms \textbf{fairer},
+so that they serve all people equally.
+%Millions of people around the world rely on social media for their news and entertainment,
+%and I believe the algorithms that analyze social media should serve all these people equally.
+Finally, my research makes machine learning \textbf{more accessible} to new programmers through open source software and new programming language features.
+
+%All my research gets open sourced, and I've developed a number of techniques to help others contribute to and benefit from open source software.
+
+% FIXME: Theory
+
+\vspace{-0.15in}
+\subsection*{Simpler.}
+
+The amount of data that companies and researchers collect is rapidly growing,
+and my phd work developed simpler methods for working with this big data.
+%Unfortunately, these big data algorithms are often significantly more complicated than their small data counterparts.
+%This complexity makes big data algorithms harder to develop and work with.
+%My PhD work developed simple methods for working with this big data.
+The goal is to make algorithms easier for everyone to use, 
+not just experts.
+
+%In the context of distributed learning, I'm particularly interested in MapReduce algorithms. 
+I'm particularly interested in MapReduce algorithms for distributed machine learning.
+MapReduce has strong restrictions on how compute nodes can communicate with each other, and
+these restrictions make deploying MapReduce-based algorithms significantly easier than other distributed frameworks.
+The downside is that proving theoretical guarantees about MapReduce algorithms is more difficult,
+but my research overcame this hurdle.
+I developed the first MapReduce algorithm for convex machine learning problems to achieve statistically optimal performance [3], and 
+I also developed a new MapReduce algorithm for cross validation that runs asymptotically faster than the widely used naive methods [6].
+%\fixme{While these algorithmic advances make it easier for non-experts to deploy large scale machine learning algorithms,
+%there is still much work to be done.}
+%Thanks to these algorithms, practitioners can use the simple MapReduce architecture and retain most of the benefits of much more complicated distributed computing architectures.
+%I also applied this work with a team of mechanical engineers on the problem of detecting attacks in power grids [4].
+This work has led to interdisciplinary collaborations with mechanical engineers studying cyberattacks on power grids [4],
+and I hope as a professor to help students apply distributed machine learning to other interdisciplinary projects.
+
+%I'm also interested in better abstractions for nearest neighbor queries.
+%For example, I introduced a new data structure called the \emph{simplified cover tree},
+%which has good theoretical performance for high dimensional data in metric spaces [5].
+%At the time of publication, the simplified cover tree's open source implementation was the fastest existing method for nearest neighbor queries in high dimensional spaces.
+%Metric spaces are a useful and easy-to-use abstraction
+%Whereas most machine learning methods require the user to convert their data into vectors of real numbers,
+%the metric space abstraction requires no such conversion and is therefore often easier to use for complex data types.
+%All that's needed is for a user to define a suitable \emph{distance function} between their data elements.
+%My ongoing work involves generalizing nearest neighbor queries into more general settings, such as probabilistic metric spaces, pseudometric spaces, and generalized metric spaces.
+%These spaces impose fewer requirements on the distance function,
+%and so it is easier for users to define suitable distance functions.
+%Metric spaces are an easy-to-use mathematical abstraction that can be applied to all types of data:
+%the user need only specify a 
+%Most nearest neighbor data structures work only in vector spaces 
+%(i.e.\ data points are vectors of numbers),
+%but in many applications it is difficult to transform data into this form.
+%Metric spaces are a mathematical abstraction that lets end users perform nearest neighbor queries without converting their data into a numeric format,
+%and so it is easier for users to apply these techniques.
+%I'm currently working on a project to generalize 
+
+In the single machine setting,
+I'm interested in improving nearest neighbor queries.
+Nearest neighbor queries are important in $k$-nearest neighbor classification, kernelized algorithms, and graph algorithms.
+I introduced a new data structure called the \emph{simplified cover tree} which has strong theoretical performance specifically for high dimensional metric spaces [5].
+This data structured simplified the existing cover tree data structure, 
+making it both faster and easier to use.
+%Many data structures have been proposed to for high dimensional nearest neighbor queries,
+%but they have all been either highly complex or lacked theoretical guarantees.
+At the time of publication, the simplified cover tree's open source implementation was the fastest method for nearest neighbor queries in high dimensional spaces.
+I have ongoing work to perform nearest neighbor queries in more general spaces,
+such as probabilistic and generalized metric spaces.
+%The goal is to make defining suitable distance functions between data points easier and more automatic.
+
+% fixme:
+%I also worked with a team of mechanical engineers on the problem of detecting attacks in power grids [4].
+%My collaborators had found a vulnerability in the way smart thermostats work that would allow an attacker to destabilize the entire power grid by manipulating only a few thermostats.
+%Fortunately, the attack turned out to be easy to detect and prevent in theory,
+%but their methods could not scale to realistic sized power grids.
+%I helped them scale their detection methods to these real-world problems.
+
+\vspace{-0.15in}
+\subsection*{Fairer.}
+
+%Machine learning algorithms heavily influence the way we consume social media.
+Websites like Facebook and Twitter use machine learning algorithms to select which content to show their users.
+If these algorithms are biased,
+then their bias will be transmitted to the millions of people who rely on social media for their news and entertainment.
+My goal is to understand and remove the biases from these algorithms.
+
+A major source of bias in these systems is that they are optimized for middle class American consumers,
+but most users of social media do not fit this mold.
+For example, most text processing algorithms were developed for English (and related languages),
+but most messages on Facebook and Twitter are not written in English.
+Those users who send messages in non-English languages therefore do not gain the benefits of the latest machine learning algorithms.
+To help address this issue,
+I developed a technique called the \emph{Unicode Convolutional Neural Netwrok (UnicodeCNN)} that is able to process text in any language [1].
+My current work applies the UnicodeCNN to determine the geographical content of messages,
+but there are many other possible applications ranging from multilingual sentiment analysis of text to improved machine translation.
+I plan to focus my initial faculty research on these applications as it will be relatively easy to get students started on these projects.
+%and I hope to expand this to other text processing applications in future work.
+
+Algorithms may also be biased because they were trained on corrupted data.
+This is a particularly large problem in social media,
+where malicious users actively manipulate algorithms into displaying racist content or fake news.
+%Many ``robust'' algorithms have been proposed,
+%but they are not widely used in practice yet because they are expensive computationally.
+Many algorithms have been proposed that are able to protect against these malicious data points,
+but they are generally too computationally expensive to be used in large scale practical applications.
+I've developed an algorithm called \emph{robust stochastic gradient descent (Robust SGD)} that protects against malicious data and scales to large scale practical applications [2].
+Robust SGD provides information theoretically optimal guarantees that limit the influence of the corrupting data on our algorithms.
+A major lonterm goal of my research will be to identify similar areas where real-life data causes machine learning algorithms to break,
+and to develop fixes.
+%Long term, I plan to continue studying these obstacles that break machine learning algorithms and how to fix them.
+
+%\fixme{A number of open question remain.}
+%Currently, this work has focused on the theoretical aspects of the problem,
+%and I hope to extend it 
+%Robust SGD has many useful theoretical guarantees.
+%This robust version of stochastic gradient descent has provable performance guarantees.
+
+\vspace{-0.15in}
+\subsection*{More accessible.}
+
+The machine learning community has thrived because of open source software.
+Libraries like scikit-learn and tensorflow simplify the process of applying the latest machine learning techniques to new applications.
+My research makes these libraries more accessible via better education and advanced programming language features.
+
+I've developed some of the first curricula for teaching open source software to students.
+Most students want to contribute to open source software, 
+but they feel overwhelmed by the number and scope of existing projects.
+My courses help them get started.
+%I developed a course to teach them how to get started.
+These courses have resulted in award winning publications [9,10],
+and more importantly helped students successfully contribute to popular open source machine learning projects.
+
+I also study how recent advances in functional programming languages can make machine learning algorithms easier to implement and use.
+For example, my \texttt{HerbiePlugin} library adds functionality to the Haskell compiler GHC to automatically rewrite numerical expressions into numerically stable forms.
+This means that a programmer can type equations exactly as they appear in textbooks without having to make subtle modifications to account for the inaccuracies of floating point arithmetic. 
+Understanding the subtleties of floating point is currently a major obstacle for new programmers to implement their own machine learning techniques,
+and so this library makes it easier for these programmers to get started.
+%The \texttt{SubHask} library and \texttt{HLearn} library together advanced support for linear algebra and, optimization, and machine learning.
+%My \texttt{homoiconic}, \texttt{ifcxt}, and \texttt{typeparams} libraries provide tools to facilitate type level meta-programming in Haskell.
+Other libraries, such as \texttt{SubHask}, \texttt{HLearn}, \texttt{homoiconic}, \texttt{ifcxt}, and \texttt{typeparams} explore similar aspects of the design space,
+and these libraries have been presented in a series of workshops and short articles [12-16].
+Techniques pioneered in functional languages have a long history of being incorporated into mainstream programming languages like Python,
+and as a faculty I will work to make this happen.
+
+%Ultimately, I hope these techniques can be incorporated into mainstream machine learning frameworks.
+
+%\subsection*{Future Directions.}
+%
+%%I plan to continue my theoretical work of designing faster and fairer algorithms,
+%%with an emphasis on social media applications.
+%%The role of social media in society will likely continue to change over the next 5 to 10 years,
+%%and new algorithms will be needed to ensure that social media continues to serve society's best interests.
+%%A key part of this work will be continuing to develop open source machine learning software,
+%%and in particular making this software easier to use for beginners.
+%
+%In the short term, I plan to work on two extensions to my work on fairer machine learning in social media.
+%The first is on analyzing the sentiment of text (e.g.\ positive or negative) written in rare languages.
+%This is a well studied problem for English and a small number of other languages,
+%but it has not been studied in most languages even though a majority of internet users speak these languages.
+%The second is to perform unsupervised machine translation.
+%Most machine translation methods require training data consisting of the same sentence translated into multiple languages,
+%but this data is expensive to generate.
+%Social media provide a large source of data in many languages that 
+%%This type of data is expensive to generate,
+%%and I hope to extend thi
+%In both problems, the techniques I've used to develop the UnicodeCNN [1] and robust SGD [2] can be extended to these
+
+%Zero shot sentiment analysis.
+%Many high quality datasets exist in English (and other popular languages) for classic natural language processing tasks like sentiment analysis.  
+%Unfortunately, in rare languages like Tagalog (spoken in the Phillipines), similar datasets do not exist, and so essentially no work exists on Tagalog sentiment classification.  
+%This means that even though millions of tweets are sent every day in Tagalog, we have very little understanding of what these tweets are actually saying.  
+%We hope to address this problem by developing a framework that can automatically transfer the results from English language sentiment analysis to these other languages using the UnicodeCNN.  
+%In particular, we plan to use the following transfer learning procedure: add new output layers to the model for sentament analysis; train these layers only in English on a standard corpus; use the model with non-English languages.  
+%Because the trained UnicodeCNN model generates useful features from each of the 100 langauges present in Twitter, similar texts written in different languages will have similar features, and so we hope to be able to learn to classify the sentiment of each of these 100 languages.  
+%A similar line of reasoning applies for most other natural language processing tasks, and not just sentament analysis.
+%
+%
+%2) Unsupervised machine translation.
+%Traditional machine translation is fully supervised in the following sense: Sentences or words with known meaning are manually associated with similar sentences and words in another language.  
+%This is possible with high quality text corpora like United Nations transcripts, but it is not realistic in the social media setting.  
+%In this setting, however, we have the advantage of significantly more data.  
+%This data has labels (like hash tags, gps coordinates, and the social graph) which all provide clues about the undelying text's meaning, and we hope to use these clues to automatically label which words or phrases in different languages have similar meanings.
+
+\section*{References}
+
+All citation numbers refer to the numbered references in my CV.
+
+\end{document}
